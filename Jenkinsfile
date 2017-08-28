@@ -1,9 +1,10 @@
 pipeline {
-  agent { any agent }
+  agent { master }
   stages {
    stage ('build') {
     steps {
-          sh 'ruby --version'
+          sh 'git --version'
+          echo $BUILD_NUMBER
           }
         }
       }
