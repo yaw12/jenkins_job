@@ -1,9 +1,9 @@
 pipeline {
-  agent { docker}
+  agent { docker 'ruby' }
   stages {
    stage ('build') {
     steps {
-          sh 'git --version'
+          sh 'ruby --version'
           echo $BUILD_NUMBER
           }
         }
