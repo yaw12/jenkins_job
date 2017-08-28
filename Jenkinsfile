@@ -1,3 +1,4 @@
+
 pipeline {
   agent { any 'ruby' }
   stages {
@@ -5,7 +6,8 @@ pipeline {
     steps {
           sh 'ruby --version'
           echo $BUILD_NUMBER
-          }
+          echo $BUILD_NAME
+         }
         }
       }
   }
