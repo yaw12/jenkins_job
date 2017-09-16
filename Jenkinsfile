@@ -1,4 +1,4 @@
-
+echo $BUILD_NUMBER
 pipeline {
   agent { any 'ruby' }
   stages {
